@@ -1,6 +1,6 @@
-## Attention이 나오기 전
+## Attention Mechanism의 등장 배경
 
-Attention이 나오기 전에 시퀀스 데이터를 처리하는 모델은 대부분 Recurrent model(순환 구조)이었습니다. <br/>
+Attention이 나오기 전에 Sequence data를 처리하는 모델은 대부분 Recurrent model(순환 구조)이었습니다. <br/>
 Recurrent model은 스스로를 반복하면서 이전에 얻은 정보가 지속되도록 해서, <br/>
 자연스럽게 문장의 순차적인 특성이 유지되게 했습니다. <br/><br/>
 
@@ -12,7 +12,21 @@ Recurrent model은 스스로를 반복하면서 이전에 얻은 정보가 지�
 여전히 long-term dependency problem은 큰 단점으로 작용했습니다. 이러한 다양한 시도는 계속 되었고, <br/>
 Attention mechanism만을 사용했는데, Input과 Output의 의존성을 발견하게 됩니다. <br/>
 
--> Attention을 통해 Recurrent model의 고질적 문제를 해결했습니다! <br/><br/>
+
+그렇게 Attention mechanism은 조경현 교수님의 Seqeunce to seqeunce with attetion으로도 유명한
+
+<img src="https://github.com/hwk06023/Attention/blob/master/images/Neural%20Machine%20Translation%20by%20Jointly%20Learning%20to%20Align%20and%20Translate.png" width="350" height="500">
+
+Neural Machine Translation by Jointly Learning to Align and Translate 논문에서 처음 소개 되었습니다.<br/><br/>
+
+## Attention Mechanism
+
+Attention mechanism의 등장 배경에서 Attention mechanism은 Sequence data를 처리하는 
+Seq2Seq 모델(번역 모델)에 처음 쓰이기 시작했다는 것을 알 수 있었습니다.
+
+현재 Attention은 
+
+
 
 
 ## Attention Is All You Need
