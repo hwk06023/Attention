@@ -28,6 +28,8 @@ Neural Machine Translation by Jointly Learning to Align and Translate 논문에�
 Attention mechanism의 등장 배경에서 Attention mechanism은 Sequence data를 처리하는 <br/>
 Seq2Seq 모델(번역 모델)에 처음 쓰이기 시작했다는 것을 알 수 있었습니다. <br/>
 
+Seq2Seq 모델은 기본적으로 Encoder-Decoder의 형태를 가지고 있습니다. [Seq2Seq 참고](https://github.com/hwk06023/Seq2Seq)
+
 그렇다면 Seq2Seq에 쓰이는 Attention mechanism은 무엇일까요? <br/>
 Seq2Seq에 쓰이는 Attention mechanism은, Decoder의 매 time-step마다 Encoder의 모든 <br/>
 time-step의 output을 참고하는데, Encoder의 모든 time-step의 output을 전부 다 동일한 비율로 참고하지 않고, <br/>
@@ -37,20 +39,3 @@ time-step의 output을 참고하는데, Encoder의 모든 time-step의 output을
 
 
 
-
-
-## Attention Is All You Need
-
-Attention Is All You Need는 2017년 6월 12일 구글 브레인, 구글 리서치 팀에서 발표한 <br/>
-신경망을 이용한 기계 번역(NMT: Neural Machine Translation)에 대한 논문입니다. <br/>
-Attention mechanism은 이름처럼 모델로 하여금 중요한 부분만 집중하게 만드는 것이 핵심입니다. <br/>
-Recurrent, Convolution을 사용하지 않고 이러한 Attention mechanism만을 사용하는 간단한 신경망 구조를 통해 <br/>
-기계 번역 분야에서 최고의 성능을 얻음과 동시에 연산 비용(Computation cost)을 줄인 것이 이 논문의 큰 특징입니다. <br/>
-이를 간단하게 설명 해보자면, Encoder 부분은 각 부분에 Attention을 더해주고, Decoder 부분은 Masking 기법을 통해 <br/>
-출력을 생성할 때에 각 단계별로 입력 시퀀스의 각기 다른 부분을 집중(병렬 처리) 할 수 있게 해줍니다. <br/>
-##### (Encoder, Decoder의 구조 및 Masking 기법에 관해서는 밑에 Transformer의 전체적인 구조를 설명하면서 함께 설명하도록 하겠습니다.) <br/>
-
-<img src="https://github.com/hwk06023/Attention/blob/master/images/AttentionIsAllYouNeed_The%20Transformer.png" width="500" height="700">
-
-
-논문에서 The Transformer 이라고 불리는 이 모델의 구조는 
