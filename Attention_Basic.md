@@ -14,7 +14,7 @@ Attention mechanism만을 사용했는데, Input과 Output의 의존성을 발�
 
 위의 내용을 정리하면, Seqeunce to sequence를 처음으로 도입한 조경현 교수님의 <br/>
 Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation의 <br/>
-문제점들을 해결하기 위해 다양한 시도 중에, Attention mechanism을 발견하게 된 것 입니다. <br/>
+문제점들을 해결하기 위해 다양한 시도 중에, Attention mechanism을 발견하게 된 것 입니다. <br/> <br/>
 
 그렇게 Attention mechanism은 조경현 교수님의 Seqeunce to seqeunce with attetion으로도 유명한 <br/>
 Neural Machine Translation by Jointly Learning to Align and Translate 논문에서 처음 소개 되었습니다.
@@ -25,10 +25,16 @@ Neural Machine Translation by Jointly Learning to Align and Translate 논문에�
 
 ## Attention Mechanism
 
-Attention mechanism의 등장 배경에서 Attention mechanism은 Sequence data를 처리하는 
-Seq2Seq 모델(번역 모델)에 처음 쓰이기 시작했다는 것을 알 수 있었습니다.
+Attention mechanism의 등장 배경에서 Attention mechanism은 Sequence data를 처리하는 <br/>
+Seq2Seq 모델(번역 모델)에 처음 쓰이기 시작했다는 것을 알 수 있었습니다. <br/>
 
-현재 Attention은 
+그렇다면 Seq2Seq에 쓰이는 Attention mechanism은 무엇일까요? <br/>
+Seq2Seq에 쓰이는 Attention mechanism은, Decoder의 매 time-step마다 Encoder의 모든 <br/>
+time-step의 output을 참고하는데, Encoder의 모든 time-step의 output을 전부 다 동일한 비율로 참고하지 않고, <br/>
+해당 Decoder의 time-step에서 연관이 있는 부분을 좀 더 집중(Attention)해서 참고합니다. <br/>
+
+
+
 
 
 
