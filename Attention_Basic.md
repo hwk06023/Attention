@@ -10,14 +10,18 @@ Recurrent model은 스스로를 반복하면서 이전에 얻은 정보가 지�
 초기의 RNN에서부터 long-term dependency(장기 의존성)에 취약하다는 단점을 가지고 있었고, <br/>
 이를 보완하기 위해 LSTM 등의 좋은 시도가 있었습니다. 물론 이러한 시도들을 통해, 성능은 개선되었지만 <br/>
 여전히 long-term dependency problem은 큰 단점으로 작용했습니다. 이러한 다양한 시도는 계속 되었고, <br/>
-Attention mechanism만을 사용했는데, Input과 Output의 의존성을 발견하게 됩니다. <br/>
+Attention mechanism만을 사용했는데, Input과 Output의 의존성을 발견하게 됩니다. <br/> <br/>
 
+위의 내용을 정리하면, Seqeunce to sequence를 처음으로 도입한 조경현 교수님의 <br/>
+Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation의 <br/>
+문제점들을 해결하기 위해 다양한 시도 중에, Attention mechanism을 발견하게 된 것 입니다. <br/>
 
-그렇게 Attention mechanism은 조경현 교수님의 Seqeunce to seqeunce with attetion으로도 유명한
+그렇게 Attention mechanism은 조경현 교수님의 Seqeunce to seqeunce with attetion으로도 유명한 <br/>
+Neural Machine Translation by Jointly Learning to Align and Translate 논문에서 처음 소개 되었습니다.
 
 <img src="https://github.com/hwk06023/Attention/blob/master/images/Neural%20Machine%20Translation%20by%20Jointly%20Learning%20to%20Align%20and%20Translate.png" width="350" height="500">
 
-Neural Machine Translation by Jointly Learning to Align and Translate 논문에서 처음 소개 되었습니다.<br/><br/>
+( Neural Machine Translation by Jointly Learning to Align and Translate ) <br/>
 
 ## Attention Mechanism
 
